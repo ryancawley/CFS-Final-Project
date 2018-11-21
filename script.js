@@ -2,25 +2,18 @@ function idCard() {
   //get reference to DOM elements
   var firstName = document.getElementById("firstName").value;
   var lastName = document.getElementById("lastName").value;
-  var idAge = document.getElementById("age");
+  var idAddress = document.getElementById("idAddress").value;
 
-  var firstNameOutput = document.getElementById("petNameOutput");
-  var lastNameOutput = document.getElementById("lastNameOutput");
-  var idAgeOutput = document.getElementById("idAgeOutput");
-}
+  var fullName = firstName + " " + lastName;
+  document.getElementById("postFullName").innerHTML = fullName;
+  var idAddress = document.getElementById("postAddress");
 
-//Define Full Name
-alert(fullName.value);
+  var idAges = [100, 9000];
+  idAges.push(idAge);
 
-fullNameOutput.innerHTML = firstName + lastName;
-
-//[0], [1]
-
-var idAges = [100, 9000];
-idAges.push(idAge);
-
-for (var i = 0; i < idAges.length; i++) {
-  if (parseInt(idAges[i]) < 100) {
-    idAgeOutput.innerHTML = idAges[i];
+  for (var i = 0; i < idAges.length; i++) {
+    if (parseInt(idAges[i]) < 100) {
+      idAgeOutput.innerHTML = idAges[i];
+    }
   }
 }
