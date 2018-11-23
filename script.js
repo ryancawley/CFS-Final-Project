@@ -8,7 +8,7 @@ function idCard() {
 
   var fullName = firstName + " " + lastName;
 
-  document.getElementById("postAddress").innHTML = idAddress;
+  document.getElementById("postAddress").innerHTML = idAddress;
   document.getElementById("postAge").innerHTML = idAge;
   document.getElementById("postPhoneNumber").innerHTML = phoneNumber;
   document.getElementById("postFullName").innerHTML = fullName;
