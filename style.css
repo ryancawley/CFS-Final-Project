@@ -1,14 +1,17 @@
 body {
-  background-color: rgb(40, 169, 212);
+  background-color: rgb(4, 154, 204);
+  font-family: georgia, helvetica, sans Georgia, "Times New Roman", Times, serif;
   text-align: center;
 }
 
-div {
-  border: 3px solid red;
-  padding: 1px;
-  border-radius: 8px;
-  background-color: lightgreen;
-  text-align: left;
+#idCard {
+  border: 5px solid black;
+
+  height: 14em;
+
+  width: 25em;
+
+  background-color: rgb(238, 124, 143);
 }
 
 p {
@@ -16,6 +19,7 @@ p {
 }
 
 img {
-  width: 10%;
-  height: auto;
+  width: 90px;
+  height: 90px;
+  float: left;
 }
