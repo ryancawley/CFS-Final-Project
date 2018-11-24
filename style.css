@@ -1,10 +1,12 @@
 body {
   background-color: rgb(4, 154, 204);
-  font-family: georgia, helvetica, sans Georgia, "Times New Roman", Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
   text-align: center;
 }
 
 #idCard {
+  margin: auto;
+
   border: 5px solid black;
 
   border-radius: 25px;
@@ -13,7 +15,11 @@ body {
 
   width: 25em;
 
+  padding-left: 10px;
+
   background-color: rgb(238, 124, 143);
+
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 #postFullName {
@@ -32,10 +38,6 @@ body {
 
 #postAddress {
   text-align: left;
-}
-
-p {
-  font-weight: bold;
 }
 
 img {
