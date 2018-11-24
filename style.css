@@ -7,6 +7,8 @@ body {
 #idCard {
   border: 5px solid black;
 
+  border-radius: 25px;
+
   height: 14em;
 
   width: 25em;
