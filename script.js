@@ -9,20 +9,17 @@ function idCard() {
   var fullName = firstName + " " + lastName;
 
   document.getElementById("postAddress").innerHTML = idAddress;
-
-  document.getElementById("postPhoneNumber").innerHTML = phoneNumber;
   document.getElementById("postFullName").innerHTML = fullName;
 
   var numberArray = [];
-  numberArray.push(idAge, phoneNumber);
+  numberArray.push(idAge);
+  numberArray.push(phoneNumber);
 
-  for (var i = 0; i < idAge.length; i++) {
-    if (parseInt(idAge[i]) < 100) {
-      document.getElementById("postAge").innerHTML = "Age: " + idAge;
-      if (parseInt(phoneNumber[i]) > 100) {
-        document.getElementById("postPhoneNumber").innerHTML =
-          "Phone Number: " + phoneNumber;
-      }
+  for (var i = 0; i < numberArray.length; i++) {
+    if (parseInt(numberArray[i]) < 100) {
+      postAge.innerHTML = "Age: " + numberArray[i];
+    } else if (parseInt(numberArray[i]) > 100) {
+      postPhoneNumber.innerHTML = "Phone Number: " + numberArray[i];
     }
   }
 }
